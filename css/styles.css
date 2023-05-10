@@ -12,7 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 
   background-color: var(--white-text-color);
   color: var(--primary-text-color);
@@ -49,6 +49,23 @@ img {
 .list {
   list-style: none;
 }
+/* Header */
+
+.container {
+  width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigations {
+  display: flex;
+  align-items: center;
+}
 
 /* Logo */
 
@@ -74,9 +91,22 @@ img {
 }
 
 /* Navigation menu */
+.menu-list {
+  display: flex;
+  margin-left: 76px;
+}
+
+.menu-list .nav-list + .nav-list {
+  margin-left: 40px;
+}
 
 .menu-item {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--headings-text-color);
 }
@@ -92,29 +122,47 @@ img {
 
 .contacts-menu {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
 }
 
 .contact-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
+.contact:not(:first-child) {
+  margin-left: 40px;
+}
 /* Hero */
 .hero {
   background-color: var(--headings-text-color);
+
+  text-align: center;
 }
 .hero-title {
+  width: 496px;
+  /* margin-top: 188px; */
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-text-color);
 }
 
 .button {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  margin-bottom: 188px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -123,8 +171,13 @@ img {
 }
 
 .primary-button {
+  padding: 16px 32px;
+
   color: var(--white-text-color);
   background-color: var(--primary-brand-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .secondary-button {
@@ -141,6 +194,11 @@ img {
 }
 
 /* Section 1 */
+
+.advatages-list {
+  display: flex;
+}
+
 .item-title {
   font-weight: 500;
   font-size: 20px;
@@ -151,6 +209,7 @@ img {
 }
 
 .item-description {
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -184,6 +243,7 @@ img {
 }
 
 .footer-text {
+  line-height: 1.5;
   color: var(--light-text-color);
 }
 
