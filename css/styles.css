@@ -51,6 +51,10 @@ img {
 }
 /* Header */
 
+.header {
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .container {
   width: 1152px;
   padding-left: 12px;
