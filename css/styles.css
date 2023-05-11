@@ -53,6 +53,8 @@ img {
 
 .container {
   width: 1152px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -162,7 +164,6 @@ img {
 }
 
 .button {
-  margin-bottom: 188px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -172,6 +173,7 @@ img {
 
 .primary-button {
   padding: 16px 32px;
+  margin-bottom: 188px;
 
   color: var(--white-text-color);
   background-color: var(--primary-brand-color);
