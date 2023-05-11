@@ -183,8 +183,15 @@ img {
 }
 
 .secondary-button {
+  padding: 12px 24px;
   color: var(--primary-brand-color);
   background-color: var(--light-text-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.secondary-button-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .primary-button:hover,
@@ -199,9 +206,17 @@ img {
 
 .advatages-list {
   display: flex;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.advatages-list .item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .item-title {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -218,6 +233,8 @@ img {
 /* Section 2 */
 
 .section-title {
+  margin-bottom: 72px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -228,14 +245,41 @@ img {
   color: var(--headings-text-color);
 }
 
+.works-list {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.works-list .item:not(:last-child) {
+  margin-right: 24px;
+}
+
 /* Section 3 */
 
 .team-members-cards {
   background-color: var(--light-text-color);
 }
 
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+
+  text-align: center;
+}
+
+.person-image {
+  margin-bottom: 32px;
+}
+.team-member-card .item-description {
+  margin-bottom: 32px;
+}
+
 .team-member-card {
   background-color: var(--white-text-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
@@ -245,16 +289,55 @@ img {
 }
 
 .footer-text {
+  width: 264px;
+  margin-top: 16px;
   line-height: 1.5;
   color: var(--light-text-color);
 }
 
 /* Portfolio */
 
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .item-title-link {
+  margin-top: 32px;
+
   color: var(--headings-text-color);
 }
 
 .item-description-link {
+  margin-bottom: 32px;
+
   color: var(--primary-text-color);
+}
+
+.card {
+  width: calc((100% - 48px) / 3);
+  margin-right: 24px;
+  margin-bottom: 48px;
+
+  border: 1px solid var(--accent-color);
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.card-link .item-title,
+.card-link .item-description {
+  margin-left: 16px;
 }
