@@ -178,7 +178,6 @@ img {
 
 .primary-button {
   padding: 16px 32px;
-  /* margin-bottom: 188px; */
 
   color: var(--white-text-color);
   background-color: var(--primary-brand-color);
@@ -216,10 +215,11 @@ img {
 
 .advatages-list {
   display: flex;
+  gap: 24px;
 }
 
-.advatages-list .item:not(:last-child) {
-  margin-right: 24px;
+.advatages-list .item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .item-title {
@@ -261,6 +261,10 @@ img {
   display: flex;
 }
 
+.works-list .item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
 .works-list .item:not(:last-child) {
   margin-right: 24px;
 }
@@ -275,23 +279,29 @@ img {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
-
+  gap: 24px;
   text-align: center;
 }
 
-.person-image {
+/* .person-image {
   margin-bottom: 32px;
 }
 .team-member-card .item-description {
   margin-bottom: 32px;
-}
+} */
 
 .team-member-card {
+  flex-basis: calc((100% - 72px) / 4);
+
   background-color: var(--white-text-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+
+.wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* Footer */
@@ -329,14 +339,10 @@ img {
 }
 
 .item-title-link {
-  margin-top: 32px;
-
   color: var(--headings-text-color);
 }
 
 .item-description-link {
-  margin-bottom: 32px;
-
   color: var(--primary-text-color);
 }
 
@@ -344,8 +350,11 @@ img {
   width: calc((100% - 48px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
+}
 
+.wrapper-cards {
   border: 1px solid var(--accent-color);
+  border-top: none;
 }
 
 .card:nth-child(3n) {
